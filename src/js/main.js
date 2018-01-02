@@ -7,6 +7,8 @@ const path = require('path');
 const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
+const project = require('./project');
+const Project = project.Project;
 
 // - Working directory
 const workingDirectory = path.join( __dirname, '..' );

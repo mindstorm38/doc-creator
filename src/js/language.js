@@ -38,12 +38,7 @@ Object.keys( extensions ).forEach( ( key, idx ) => {
 
 } );
 
-module.exports = {
-	extensions: extensions,
-	available_languages: availableLanguages
-};
-
-module.exports.getFileLanguages = function( filePath ) {
+function getFileLanguages( filePath ) {
 	let fileExtMatch = fileExtRegex.exec( filePath );
 	if ( fileExtMatch === null || fileExtMatch[1] === '' ) return [];
 	let ext = fileExtMatch[1];
@@ -51,3 +46,9 @@ module.exports.getFileLanguages = function( filePath ) {
 	if ( languages === undefined ) return [];
 	return languages;
 }
+
+module.exports = {
+	extensions: extensions,
+	available_languages: availableLanguages,
+	getFileLanguages: getFileLanguages
+};
