@@ -1,5 +1,5 @@
 /**
- * Main electron application script file
+ * Main electron application js file
  */
 
 // - Requires
