@@ -2,7 +2,7 @@
   "name": "doc-creator",
   "version": "1.0.0",
   "description": "Code documentation creator",
-  "main": "index.js",
+  "main": "src/js/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
